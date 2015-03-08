@@ -1,0 +1,15 @@
+<script src="zepto.min.js"></script>
+
+<script>
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?", function(data) {
+		
+		var items = data.items;
+
+		items.forEach(function(item){
+			var url= item.media.m;
+			var myImage = document.createElement('img');
+			myImage.src = url;
+			document.body.appendChild(myImage);
+		});
+	});
+</script>
