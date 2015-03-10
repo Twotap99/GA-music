@@ -11,6 +11,11 @@ body {
   box-shadow: 0 3px 25px;
 }
 
+h1{
+  text-align: center;
+  font-size: 26px;
+}
+
 #thumbnail-panel {
   -webkit-transition: -webkit-transform 550ms;
   -webkit-transform: translate3d(0,0,0);
